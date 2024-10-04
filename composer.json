@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": {
+            "PrintServer\\": "src"
+        }
+    },
+    "require": {
+        "mike42/escpos-php": "^4.0",
+        "cboden/ratchet": "^0.4.4",
+        "react/http": "^1.10.0"
+    }
+}
