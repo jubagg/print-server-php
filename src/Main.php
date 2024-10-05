@@ -101,7 +101,7 @@ class Main
             return new Response(
                 204,
                 $corsHeaders,
-                null 
+                ""
             );
         });
 
