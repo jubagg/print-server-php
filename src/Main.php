@@ -77,6 +77,7 @@ class Main
                 $printer->setTextSize(1, 1);
                 foreach($body->details as $detail){
                     $printer->setFont(Printer::FONT_B);
+                    $printer->setTextSize(2, 2);
                     $printer->text($detail->name."\n");
                     $printer->setFont(Printer::FONT_A);
                     $printer->text($row($detail->quantity, $detail->amount, $detail->final_price, $lineCharacters)."\n");
