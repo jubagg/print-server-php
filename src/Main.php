@@ -20,9 +20,9 @@ class Main
     public ?int $port = null; 
 
     public function start_server(){
-
-        $this->ip = readline("Ingrese IP del servidor(default=". DEFAULT_IP ."):");
-        $this->port = (int) readline("Ingrese puerto del servidor(default=". DEFAULT_PORT ."):");
+        
+        $this->ip =explode(" ", shell_exec("hostname -I"))[0]; //readline("Ingrese IP del servidor(default=". DEFAULT_IP ."):");
+        $this->port = (int) DEFAULT_PORT; // readline("Ingrese puerto del servidor(default=". DEFAULT_PORT ."):");
 
         $full_base_path = $this->ip ? $this->ip :  DEFAULT_IP;
         $full_base_path .= ":";
