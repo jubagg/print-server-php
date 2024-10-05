@@ -70,7 +70,7 @@ class Main
                 $printer->setTextSize(2, 1);
                 $printer->setJustification(Printer::JUSTIFY_LEFT);
                 $printer->text("Tienda: ".$body->shop."\n");
-                $printer->text("PV: ".$body->pos->pointer_number."\n");
+                $printer->text("PV: ".$body->pos->point_number."\n");
                 $printer->setTextSize(1, 1);
                 $printer->text($time->format('H:m:i d-M-y'));
                 $printer->text("\n");
